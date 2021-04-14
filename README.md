@@ -32,6 +32,11 @@ cd backend && yarn install
 This project uses MongoDB, a NoSQL, document-oriented database program. You are required to install
 MongoDB Community Edition (v4.4) from https://www.mongodb.com/ for this software to work.
 
+Ensure the MongoDB service is running when attempting to use the program.
+As of writing this, you can use ```sudo systemctl status mongod``` to check if the service is running (Ubuntu 20.04)
+and ```sudo systemctl start mongod``` to start the service if it is not. Follow the installation guide
+on the MongoDB website to check how to do this for your specific operating system.
+
 ### Running the POS Program
 
 To run the program, simply run ```npm start``` from the root project directory. This will concurrently launch both the backend and frontend.
